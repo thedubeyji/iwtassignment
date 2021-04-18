@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Assignment1_Question5</title>
+
+    <style>
+        body {
+            margin: 0px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .header {
+            display: block;
+            margin: 30px;
+            position: relative;
+        }
+
+        .header1 {
+            height: 30vh;
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .textbox {
+            font-family: 'Antonio', sans-serif;
+            /* font-family: 'Barlow', sans-serif;
+            font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            top: 0%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .heading_primary {
+            position: absolute;
+            color: #000000;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+
+        }
+
+        .heading_primary_main {
+            display: block;
+            color: #000000;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 35px;
+            text-shadow: 5px 5px 30px #ffffff;
+            animation-name: moveInLeft;
+            /* animation-duration: 1s;
+            animation-timing-function: ease-out; */
+        }
+
+        .heading_primary_sub {
+            display: block;
+            color: #000000;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 17.4px;
+            text-shadow: 5px 5px 30px #ffffff;
+            /* animation: moveInRight 1s ease-out; */
+        }
+
+
+        .hr_1 {
+            position: absolute;
+            border: 1px solid #000000;
+            top: 80%;
+            width: 70%;
+            left: 15%;
+            opacity: 0.4;
+        }
+
+        /* .about_heading {
+            position: absolute;
+            top: 38%;
+            left: 44%;
+            font-family: 'Antonio', sans-serif;
+            text-shadow: 5px 5px 20px #dbd3d3;
+        } */
+
+        .section_1 {
+            display: block;
+            position: absolute;
+            top: 47%;
+            left: 24%;
+            text-align: center;
+            text-shadow: 5px 5px 20px #dbd3d3;
+            color: rgb(0, 0, 0);
+            font-family: 'Antonio', sans-serif;
+
+        }
+
+        .content_1 {
+            padding-left: 40px;
+
+        }
+
+        .header2 {
+            height: 70vh;
+            margin-top: 40px;
+            background-image: linear-gradient(to bottom, rgba(57, 26, 78, 0.9), rgba(236, 189, 203, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .header3 {
+            height: 100vh;
+            margin-top: 40px;
+            background-image: linear-gradient(to bottom, rgba(57, 26, 78, 0.9), rgba(236, 189, 203, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .header1,
+        .header2,
+        .header3 {
+            background-image: linear-gradient(to bottom, rgba(128, 223, 215, 0.9), rgba(255, 255, 255, 0.9));
+        }
+
+        .header2 {
+            position: relative;
+        }
+
+        .header2_11 {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 7%;
+            left: 44%;
+        }
+
+        .header2_12 {
+            /* font-family: 'Antonio', sans-serif; */
+            font-family: 'Barlow', sans-serif;
+            /* font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            font-size: 22px;
+            font-weight: 300;
+            top: 25%;
+            /* left: 15%; */
+            text-align: center;
+            margin: 0px 80px 0px 80px;
+        }
+
+        .header2_13 {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 45%;
+            left: 42%;
+        }
+
+        .header2_14 {
+            font-family: 'Barlow', sans-serif;
+            position: absolute;
+            font-size: 22px;
+            font-weight: 300;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.3;
+            top: 53%;
+            left: 41.5%;
+        }
+
+        .header3 {
+            border-collapse: collapse;
+            font-family: 'Barlow', sans-serif;
+            position: relative;
+            /* border-spacing: 0; */
+            line-height: 1.6;
+            margin-bottom: 40px;
+            /* width: 100%; */
+        }
+
+        .header3_1{
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 1.5%;
+            left: 27%;
+        }
+
+        .header3_11{
+            position: absolute;
+            top: 15%;
+            left: 7%;
+        }
+
+        strong{
+            font-size: 20px;
+        }
+
+        .header4 {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(128, 223, 215, 0.9), rgba(255, 255, 255, 0.9));
+            height: 40vh;
+            border-radius: 2%;
+        }
+
+        .header4_11 {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 7%;
+            left: 33%;
+        }
+
+        .header4_12 {
+            /* font-family: 'Antonio', sans-serif; */
+            font-family: 'Barlow', sans-serif;
+            /* font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            font-size: 22px;
+            font-weight: 300;
+            top: 45%;
+            /* left: 15%; */
+            text-align: center;
+            margin: 0px 80px 0px 80px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header1">
+            <div class="textbox">
+                <h1 class="heading_primary">
+                    <span class="heading_primary_main">Assignment 1</span>
+                    <span class="heading_primary_sub">Question 5</span>
+                </h1>
+            </div>
+            <hr class="hr_1">
+
+            <!-- <h2 class="about_heading"></h2> -->
+        </div>
+        <div class="header2">
+            <div class="header2_1">
+                <span class="header2_11">
+                    <h2>WHAT IS SCRIPTING?</h2>
+                </span>
+                <span class="header2_12">A scripting language is a form of programming language designed for integrating
+                    and communication with other programming languages. It which helps you to control one or multiple
+                    application without the need of compilation</span>
+                <span class="header2_13"><u>ADVANTAGES OF SCRIPTING LANGUAGE</u></span>
+                <span class="header2_14">
+                    <ul style="list-style-type: none;">
+                        <li>Easy to learn.</li>
+                        <li>Enable us to edit fast.</li>
+                        <li>Interactivity.</li>
+                        <li>Functionality.</li>
+                        <li>Low maintenance cost.</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <div class="header3">
+            <span class="header3_1">
+                <h2>DIFFERENCE BETWEEN SCRIPTING AND PROGRAMMING LANGUAGE</h2>
+            </span>
+            <table>
+                <tbody class="header3_11">
+                    <tr>
+                        <td><strong>Factor</strong></td>
+                        <td><strong>Scripting Language</strong></td>
+                        <td><strong>Programming Language</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Type of language</strong></td>
+                        <td><span style="font-weight: 400;">Interpreter based</span></td>
+                        <td><span style="font-weight: 400;">Compiler based</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Usage</strong></td>
+                        <td><span style="font-weight: 400;">To combine existing components</span></td>
+                        <td><span style="font-weight: 400;">To develop from scratch</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Running</strong></td>
+                        <td><span style="font-weight: 400;">Inside other program (dependent)</span></td>
+                        <td><span style="font-weight: 400;">Independent of a parent program</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Conversion</strong></td>
+                        <td><span style="font-weight: 400;">High level instructions converted to machine language</span>
+                        </td>
+                        <td><span style="font-weight: 400;">Full program converted to machine language in one
+                                time</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Design</strong></td>
+                        <td><span style="font-weight: 400;">Makes coding simple and fast</span></td>
+                        <td><span style="font-weight: 400;">Gives full use of language</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compilation</strong></td>
+                        <td><span style="font-weight: 400;">No need to compile</span></td>
+                        <td><span style="font-weight: 400;">Needs to compile first</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>File type</strong></td>
+                        <td><span style="font-weight: 400;">Does not create a file type</span></td>
+                        <td><span style="font-weight: 400;">Creates a .exe file</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Coding type</strong></td>
+                        <td><span style="font-weight: 400;">It is a small piece of code</span></td>
+                        <td><span style="font-weight: 400;">It is a full code of a program</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time to develop</strong></td>
+                        <td><span style="font-weight: 400;">Less time as required less code</span></td>
+                        <td><span style="font-weight: 400;">More time as you need to write the full code</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Complexity</strong></td>
+                        <td><span style="font-weight: 400;">Easy to write and use</span></td>
+                        <td><span style="font-weight: 400;">Difficult</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Interpretation</strong></td>
+                        <td><span style="font-weight: 400;">It is interpreted in another program</span></td>
+                        <td><span style="font-weight: 400;">Stand-alone compile result, no need to be interpreted by
+                                another program</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Length</strong></td>
+                        <td><span style="font-weight: 400;">Only a few and short lines of coding</span></td>
+                        <td><span style="font-weight: 400;">Numerous lines for every function</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hosting requirement</strong></td>
+                        <td><span style="font-weight: 400;">Requires a host</span></td>
+                        <td><span style="font-weight: 400;">Self-executable, no host needed</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Support</strong></td>
+                        <td><span style="font-weight: 400;">Limited or no support to user interface design, data types,
+                                and graphic design</span></td>
+                        <td><span style="font-weight: 400;">Rich support to user interface design, data types, and
+                                graphic design</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cost</strong></td>
+                        <td><span style="font-weight: 400;">Low maintenance</span></td>
+                        <td><span style="font-weight: 400;">High maintenance</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example</strong></td>
+                        <td><span style="font-weight: 400;">JavaScript, PHP, Ruby, Perl, VB Script, etc.</span></td>
+                        <td><span style="font-weight: 400;">C, C++, Java, Pascal, C#, VB, Basic, COBOL, etc.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="header4">
+            <div class="header4_1">
+                <span class="header4_11">
+                    <h2>WHAT IS CLIENT SIDE AND SERVER SIDE SCRIPTING?</h2>
+                </span>
+                <span class="header4_12">Client-side means that the action takes place on the user's computer. Server-side means that the action takes place on a web server. For this reason, most things that can be accomplished using JavaScript can be done without needing access to a web server.
+                </span>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

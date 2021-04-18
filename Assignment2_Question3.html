@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Assignment2_Question3</title>
+
+    <style>
+        body {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: block;
+            margin: 30px;
+        }
+
+        .header1 {
+            height: 100vh;
+            background-image: linear-gradient(to bottom, rgba(144, 62, 251, 0.9), rgba(188, 168, 235, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .textbox {
+            font-family: 'Antonio', sans-serif;
+            /* font-family: 'Barlow', sans-serif;
+            font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            top: 17%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .heading_primary {
+            color: #000000;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+            margin-bottom: 60px;
+        }
+
+        .heading_primary_main {
+            display: block;
+            color: #000000;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 35px;
+            text-shadow: 5px 5px 15px #ffffff;
+            animation-name: moveInLeft;
+            /* animation-duration: 1s;
+            animation-timing-function: ease-out; */
+        }
+
+        .heading_primary_sub {
+            display: block;
+            color: #000000;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 17.4px;
+            text-shadow: 5px 5px 25px #ffffff;
+            /* animation: moveInRight 1s ease-out; */
+        }
+
+
+        .hr_1 {
+            position: absolute;
+            border: 1px solid #000000;
+            top: 30%;
+            width: 70%;
+            left: 15%;
+            opacity: 0.4;
+        }
+
+        .section_1 {
+            display: block;
+            position: absolute;
+            top: 40%;
+            left: 17%;
+            text-align: center;
+            text-shadow: 5px 5px 20px #dbd3d3;
+            color: rgb(0, 0, 0);
+            font-family: 'Antonio', sans-serif;
+
+        }
+
+        .content_1 {
+            padding-left: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header1">
+            <div class="textbox">
+                <h1 class="heading_primary">
+                    <span class="heading_primary_main">Assignment 2</span>
+                    <span class="heading_primary_sub">Question 3</span>
+                </h1>
+            </div>
+            <hr class="hr_1">
+
+            <div class="section_1">
+                <h1 align='center'>TIME TABLE</h1>
+                <table border="5" cellspacing="0" align="center">
+                    <tr>
+                        <td align="center" height="50" width="100"><br>
+                            <b>Lect.<br>Days</br></b>
+                        </td>
+                        <td align="center" height="50" width="100">
+                            <b>I<br>8:30-9:25</b>
+                        </td>
+                        <td align="center" height="50" width="100">
+                            <b>II<br>9:30-10:25</b>
+                        </td>
+                        <td align="center" height="50" width="100">
+                            <b>III<br>10:30-11:20</b>
+                        </td>
+                        <td align="center" height="50" width="100">
+                            <b>IV<br>11:25-12:15</b>
+                        </td>
+                        <td align="center" height="50" width="100">
+                            <b>12:15-01:15</b>
+                        </td>
+                        <td align="center" height="50" width="100">
+                            <b>V<br>1:15-2:05</b>
+                        </td>
+                        <td align="center" height="50" width="100">
+                            <b>VI<br>2:10-3:00</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="50">
+                            <b>Mon</b>
+                        </td>
+                        <td align="center" height="50">OS</td>
+                        <td align="center" height="50">CSA</td>
+                        <td colspan="2" align="center" height="50">OS(B1)<br>CP-
+                            III(B2)</br></td>
+                        <td rowspan="6" align="center" height="50">
+                            <h2>L<br>U<br>N<br>C<br>H</h2>
+                        </td>
+                        <td align="center" height="50">AI/DS/IWT</td>
+                        <td align="center" height="50">DBMS</td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="50">
+                            <b>Tue</b>
+                        </td>
+                        <td align="center" height="50">OS</td>
+                        <td align="center" height="50">DBMS</td>
+                        <td colspan="2" align="center" height="50">CP-
+                            III(B1)<br>DBMS(B2)</br></td>
+                        <td colspan="2" align="center" height="50">SS-II</td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="50">
+                            <b>Wed</b>
+                        </td>
+                        <td align="center" height="50">D COM</td>
+                        <td align="center" height="50">OS</td>
+                        <td colspan="2" align="center" height="50">DBMS(B1)<br>CSA(B2)</br></td>
+                        <td align="center" height="50">DBMS</td>
+                        <td align="center" height="50">CSA</td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="50">
+                            <b>Thu</b>
+                        </td>
+                        <td align="center" height="50">CP-III</td>
+                        <td align="center" height="50">D COM</td>
+                        <td colspan="2" align="center" height="50">CSA(B1)<br>OS(B2)</br></td>
+                        <td align="center" height="50">AI/DS/IWT</td>
+                        <td align="center" height="50">CSA</td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="50">
+                            <b>Fri</b>
+                        </td>
+                        <td align="center" height="50">CP-III</td>
+                        <td align="center" height="50">DBMS</td>
+                        <td align="center" height="50">AI/DS/IWT</td>
+                        <td align="center" height="50">CSA</td>
+                        <td align="center" height="50">D COM</td>
+                        <td align="center" height="50">OS</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </header>
+</body>
+
+</html>

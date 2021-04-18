@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Assignment1_Question1</title>
+
+    <style>
+        body {
+            margin: 0px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .header {
+            display: block;
+            margin: 30px;
+            position: relative;
+        }
+
+        .header1 {
+            height: 30vh;
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .textbox {
+            font-family: 'Antonio', sans-serif;
+            /* font-family: 'Barlow', sans-serif;
+            font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            top: 0%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .heading_primary {
+            position: absolute;
+            color: #000000;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+
+        }
+
+        .heading_primary_main {
+            display: block;
+            color: #000000;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 35px;
+            text-shadow: 5px 5px 30px #ffffff;
+            animation-name: moveInLeft;
+            /* animation-duration: 1s;
+            animation-timing-function: ease-out; */
+        }
+
+        .heading_primary_sub {
+            display: block;
+            color: #000000;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 17.4px;
+            text-shadow: 5px 5px 30px #ffffff;
+            /* animation: moveInRight 1s ease-out; */
+        }
+
+
+        .hr_1 {
+            position: absolute;
+            border: 1px solid #000000;
+            top: 80%;
+            width: 70%;
+            left: 15%;
+            opacity: 0.4;
+        }
+
+        /* .about_heading {
+            position: absolute;
+            top: 38%;
+            left: 44%;
+            font-family: 'Antonio', sans-serif;
+            text-shadow: 5px 5px 20px #dbd3d3;
+        } */
+
+        .section_1 {
+            display: block;
+            position: absolute;
+            top: 47%;
+            left: 24%;
+            text-align: center;
+            text-shadow: 5px 5px 20px #dbd3d3;
+            color: rgb(0, 0, 0);
+            font-family: 'Antonio', sans-serif;
+
+        }
+
+        .content_1 {
+            padding-left: 40px;
+
+        }
+
+        .header2 {
+            height: 150vh;
+            margin-top: 40px;
+            background-image: linear-gradient(to bottom, rgba(57, 26, 78, 0.9), rgba(236, 189, 203, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .header1,
+        .header2 {
+            background-image: linear-gradient(to bottom, rgba(128, 223, 215, 0.9), rgba(255, 255, 255, 0.9));
+        }
+
+        .topcontent {
+            position: absolute;
+            top: 10%;
+            left: 11%;
+            font-family: 'Barlow', sans-serif;
+            font-size: 18px;
+            font-weight: 100;
+
+        }
+
+        .header2_11 {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 1%;
+            left: 35%;
+        }
+
+        .header2_12 {
+            /* font-family: 'Antonio', sans-serif; */
+            font-family: 'Barlow', sans-serif;
+            /* font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            font-size: 22px;
+            font-weight: 300;
+            /* left: 15%; */
+            text-align: center;
+            margin: 0px 80px 0px 80px;
+            line-height: 2;
+            top: 5%;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header1">
+            <div class="textbox">
+                <h1 class="heading_primary">
+                    <span class="heading_primary_main">Assignment 1</span>
+                    <span class="heading_primary_sub">Question 1</span>
+                </h1>
+            </div>
+            <hr class="hr_1">
+
+            <!-- <h2 class="about_heading"></h2> -->
+        </div>
+        <div class="header2">
+            <div class="header2_1">
+                <span class="header2_11">
+                    <h2>RENDERING PROCESS OF WEB GOOGLE CHROME</h2>
+                </span>
+                <span class="topcontent">
+                    <h3>
+                        Rendering is the process of turning (hyper) text into pixels. A browser uses following steps to display web page to the user.
+                    </h3>
+                </span>
+                <span class="header2_12">
+                    <span>
+                        <p style="margin: 150px 100px 100px 100px;">
+                            Sends an HTTP Request to the server: The browser makes an HTTP Request to the server and the server sends data back to the browser. In the case of a web page, the data sent back to the browser is HTML. Then, the browser parses the HTML file and show the page to the user.
+                        </p>
+                    </span>
+                    <span>
+                        <p style="margin: 100px;">
+                            Parse the documents received by the server: Parsing means to analyse a sentence document into its parts. Parsing the HTML is to understand the structure of the HTML file. When a browser renders an HTML file to the user, takes each element one by one and parse it into DOM tree.
+                        </p>
+                    </span>
+                    <span>
+                        <p style="margin: 100px;">
+                            Create a Layout from the elements of the DOM tree: After the Parsing of the HTML, Chrome knows the structure of your page that is all tags, elements etc. Now, Chrome will need to get the layout of the page. It maps each element to a specific position in a browser. During the layout-ing, the browser is busy with the task and can’t do anything else.
+                        </p>
+                    </span>
+                    <span>
+                        <p style="margin: 100px;">
+                            Paint the HTML: Chrome will then paint the HTML tree with pixels. This is where Chrome adds the content to your page. It writes text, loads your images, adds colours, etc.
+                        </p>
+                    </span>
+                </span>
+            </div>
+    </header>
+</body>
+
+</html>

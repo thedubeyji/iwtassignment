@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Assignment1_Question2</title>
+
+    <style>
+        body {
+            margin: 0px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .header {
+            display: block;
+            margin: 30px;
+            position: relative;
+        }
+
+        .header1 {
+            height: 30vh;
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .textbox {
+            font-family: 'Antonio', sans-serif;
+            /* font-family: 'Barlow', sans-serif;
+            font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            top: 0%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .heading_primary {
+            position: absolute;
+            color: #000000;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+
+        }
+
+        .heading_primary_main {
+            display: block;
+            color: #000000;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 35px;
+            text-shadow: 5px 5px 30px #ffffff;
+            animation-name: moveInLeft;
+            /* animation-duration: 1s;
+            animation-timing-function: ease-out; */
+        }
+
+        .heading_primary_sub {
+            display: block;
+            color: #000000;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 17.4px;
+            text-shadow: 5px 5px 30px #ffffff;
+            /* animation: moveInRight 1s ease-out; */
+        }
+
+
+        .hr_1 {
+            position: absolute;
+            border: 1px solid #000000;
+            top: 80%;
+            width: 70%;
+            left: 15%;
+            opacity: 0.4;
+        }
+
+        /* .about_heading {
+            position: absolute;
+            top: 38%;
+            left: 44%;
+            font-family: 'Antonio', sans-serif;
+            text-shadow: 5px 5px 20px #dbd3d3;
+        } */
+
+        .section_1 {
+            display: block;
+            position: absolute;
+            top: 47%;
+            left: 24%;
+            text-align: center;
+            text-shadow: 5px 5px 20px #dbd3d3;
+            color: rgb(0, 0, 0);
+            font-family: 'Antonio', sans-serif;
+
+        }
+
+        .content_1 {
+            padding-left: 40px;
+
+        }
+
+        .header2 {
+            height: 40vh;
+            margin-top: 40px;
+            background-image: linear-gradient(to bottom, rgba(57, 26, 78, 0.9), rgba(236, 189, 203, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .header3 {
+            height: 40vh;
+            margin-top: 40px;
+            background-image: linear-gradient(to bottom, rgba(57, 26, 78, 0.9), rgba(236, 189, 203, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .header1,
+        .header2,
+        .header3,
+        .header4{
+            background-image: linear-gradient(to bottom, rgba(128, 223, 215, 0.9), rgba(255, 255, 255, 0.9));
+        }
+
+        .header2 {
+            position: relative;
+        }
+
+        .header2_11 {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 1%;
+            left: 38%;
+        }
+
+        .header2_12 {
+            /* font-family: 'Antonio', sans-serif; */
+            font-family: 'Barlow', sans-serif;
+            /* font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            font-size: 22px;
+            font-weight: 300;
+            top: 30%;
+            /* left: 15%; */
+            text-align: center;
+            margin: 0px 80px 0px 80px;
+        }
+        .header3 {
+            position: relative;
+        }
+
+        .header3_11 {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 4%;
+            left: 42%;
+        }
+
+        .header3_12 {
+            /* font-family: 'Antonio', sans-serif; */
+            font-family: 'Barlow', sans-serif;
+            /* font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            font-size: 22px;
+            font-weight: 300;
+            top: 25%;
+            /* left: 15%; */
+            text-align: center;
+            margin: 0px 80px 0px 80px;
+        }
+
+        .header4 {
+            position: relative;
+            height: 40vh;
+        }
+
+        .header4_11 {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 7%;
+            left: 40%;
+        }
+
+        .header4_12 {
+            /* font-family: 'Antonio', sans-serif; */
+            font-family: 'Barlow', sans-serif;
+            /* font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            font-size: 22px;
+            font-weight: 300;
+            top: 25%;
+            /* left: 15%; */
+            text-align: center;
+            margin: 0px 80px 0px 80px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header1">
+            <div class="textbox">
+                <h1 class="heading_primary">
+                    <span class="heading_primary_main">Assignment 1</span>
+                    <span class="heading_primary_sub">Question 2</span>
+                </h1>
+            </div>
+            <hr class="hr_1">
+
+            <!-- <h2 class="about_heading"></h2> -->
+        </div>
+        <div class="header2">
+            <div class="header2_1">
+                <span class="header2_11">
+                    <h2>SIMPLE MAIL TRANSFER PROTOCOL</h2>
+                </span>
+                <span class="header2_12">Simple Mail Transfer Protocol, is just a simple network protocol that allows us to transder the email to thew email servers using some commands. <p>It is a set of commands, used to only send emails over the internet. So whenever you want to send an email) commands. you will be using simple mail transfer protocol.</p> <p>The main purpose of SMTP is used to set up communication rules between servers. They also have a way of handling the errors such as incorrect email address. For example, if the recipient address is wrong, then receiving server reply with an error message of some kind.</p></span>
+            </div>
+        </div>
+        <div class="header3">
+            <div class="header3_1">
+                <span class="header3_11">
+                    <h2>POST OFFICE PROTOCOL</h2>
+                </span>
+                <span class="header3_12"><p>Post Office Protocol is a standard mail protocol used to receive emails from a remote server to a local email client. POP3 allows you to download email messages on your local computer and read them even when you are offline.</p> <p>POP3 is designed to delete mail on the server as soon as the user has downloaded it. However, some implementations allow users or an administrator to specify that mail be saved for some period of time. POP can be thought of as a "store-and-forward" service.</p>
+                </span>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="header2_1">
+                <span class="header2_11">
+                    <h2>INTERNET MESSAGE ACCESS PROTOCOL</h2>
+                </span>
+                <span class="header2_12">The Internet Message Access Protocol, is the alternative of POP, it is a mail protocol used for accessing email on a remote web server from a local client. IMAP provides the user more capabilities for retaining e-mail on the server and for organizing it in folders on the server. IMAP can be thought of as a remote file server.
+                </span>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

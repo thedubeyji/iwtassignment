@@ -1,0 +1,25 @@
+book{
+    display: block;
+    color: violet;
+}
+title{
+    display: block;
+    color: yellowgreen;
+    font-size: 30px;
+}
+author{
+    display: block;
+    color: purple;
+}
+price{
+    display: block;
+    color: rgb(153, 146, 51);
+}
+publisher{
+    display: block;
+    color: rgb(153, 51, 139);
+}
+edition{
+    display: block;
+    color: rgb(88, 153, 51);
+}

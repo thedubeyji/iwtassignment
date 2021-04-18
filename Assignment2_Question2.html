@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Assignment2_Question2</title>
+
+    <style>
+        body{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: block;
+            margin: 30px;
+        }
+
+        .header1 {
+            height: 100vh;
+            background-image: linear-gradient(to bottom, rgba(144, 62, 251, 0.9), rgba(188, 168, 235, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .textbox {
+            font-family: 'Antonio', sans-serif;
+            /* font-family: 'Barlow', sans-serif;
+            font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            top: 17%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .heading_primary {
+            color: #000000;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+            margin-bottom: 60px;
+        }
+
+        .heading_primary_main {
+            display: block;
+            color: #000000;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 35px;
+            text-shadow: 5px 5px 30px #ffffff;
+            animation-name: moveInLeft;
+            /* animation-duration: 1s;
+            animation-timing-function: ease-out; */
+        }
+
+        .heading_primary_sub {
+            display: block;
+            color: #000000;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 17.4px;
+            text-shadow: 5px 5px 30px #ffffff;
+            /* animation: moveInRight 1s ease-out; */
+        }
+
+        
+        .hr_1{
+            position: absolute;
+            border : 1px solid #000000;
+            top: 30%;
+            width: 70%;
+            left: 15%;
+            opacity: 0.4;
+        }
+
+        .about_heading{
+            position: absolute;
+            top: 38%;
+            left: 44%;
+            font-family: 'Antonio', sans-serif;
+            text-shadow: 5px 5px 20px #dbd3d3;
+        }
+        
+        .section_1{
+            display: block;
+            position: absolute;
+            top: 47%;
+            left : 24%;
+            text-align: center;
+            text-shadow: 5px 5px 20px #dbd3d3;
+            color: rgb(0, 0, 0);
+            font-family: 'Antonio', sans-serif;
+            
+        }
+
+        .content_1{
+            padding-left: 40px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header1">
+            <div class="textbox">
+                <h1 class="heading_primary">
+                    <span class="heading_primary_main">Assignment 2</span>
+                    <span class="heading_primary_sub">Question 2</span>
+                </h1>
+            </div>
+            <hr class="hr_1">
+
+            <h2 class="about_heading">About Myself</h2>
+
+            <div class="section_1">
+                <h3>Hi, My name is Ved Dubey. I'm from Indore, Madhya Pradesh.</h3>
+                <h3>Currently, I'm pursuing degree of Bachelor of Technology in IT branch from Medi-Caps University, Indore.</h3>
+                <h3>My hobbies are Singing, Coding, Dancing, Photography.</h3>
+                <h3>I'm developing my skill of playing Guitar.</h3>
+                <h3>I have worked in a short documentary as child artist and that's my interest too.</h3>
+                <h3>I'm curious about learning new things.</h3>
+            </div>
+
+
+        </div>
+    </header>
+</body>
+</html>

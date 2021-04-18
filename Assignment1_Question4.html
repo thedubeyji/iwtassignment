@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Assignment1_Question4</title>
+
+    <style>
+        body {
+            margin: 0px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .header {
+            display: block;
+            margin: 30px;
+            position: relative;
+        }
+
+        .header1 {
+            height: 30vh;
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .textbox {
+            font-family: 'Antonio', sans-serif;
+            /* font-family: 'Barlow', sans-serif;
+            font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            top: 0%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .heading_primary {
+            position: absolute;
+            color: #000000;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+
+        }
+
+        .heading_primary_main {
+            display: block;
+            color: #000000;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 35px;
+            text-shadow: 5px 5px 30px #ffffff;
+            animation-name: moveInLeft;
+            /* animation-duration: 1s;
+            animation-timing-function: ease-out; */
+        }
+
+        .heading_primary_sub {
+            display: block;
+            color: #000000;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 17.4px;
+            text-shadow: 5px 5px 30px #ffffff;
+            /* animation: moveInRight 1s ease-out; */
+        }
+
+
+        .hr_1 {
+            position: absolute;
+            border: 1px solid #000000;
+            top: 80%;
+            width: 70%;
+            left: 15%;
+            opacity: 0.4;
+        }
+
+        /* .about_heading {
+            position: absolute;
+            top: 38%;
+            left: 44%;
+            font-family: 'Antonio', sans-serif;
+            text-shadow: 5px 5px 20px #dbd3d3;
+        } */
+
+        .section_1 {
+            display: block;
+            position: absolute;
+            top: 47%;
+            left: 24%;
+            text-align: center;
+            text-shadow: 5px 5px 20px #dbd3d3;
+            color: rgb(0, 0, 0);
+            font-family: 'Antonio', sans-serif;
+
+        }
+
+        .content_1 {
+            padding-left: 40px;
+
+        }
+
+        .header2 {
+            height: 90vh;
+            margin-top: 40px;
+            background-image: linear-gradient(to bottom, rgba(57, 26, 78, 0.9), rgba(236, 189, 203, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .header1,
+        .header2 {
+            background-image: linear-gradient(to bottom, rgba(128, 223, 215, 0.9), rgba(255, 255, 255, 0.9));
+        }
+
+        .header2 {
+            position: relative;
+        }
+
+        .header2_11 {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            top: 20%;
+            left: 35%;
+        }
+
+        .header2_1{
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            top: 4%;
+            left: 40%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header1">
+            <div class="textbox">
+                <h1 class="heading_primary">
+                    <span class="heading_primary_main">Assignment 1</span>
+                    <span class="heading_primary_sub">Question 4</span>
+                </h1>
+            </div>
+            <hr class="hr_1">
+
+            <!-- <h2 class="about_heading"></h2> -->
+        </div>
+        <div class="header2">
+            <span class="header2_1">
+                <h2>DIFFERENT TYPES OF BASIC TAGS.</h2>
+            </span>
+            <table>
+                <tbody class="header2_11">
+                    <tr>
+                        <td><strong>Tag</strong></td>
+                        <td><strong>Tag Name</strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;h1&sc;, &pr;h2&sc;, &pr;h3&sc;, &pr;h4&sc;, &pr;h5&sc;, &pr;h6&sc;</td>
+                        <td><span style="font-weight: 400;">Header Tags</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;br&sc;</td>
+                        <td><span style="font-weight: 400;">Line Breaker</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;hr&sc;</td>
+                        <td><span style="font-weight: 400;">Horizontal Rule</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;nav&sc;</td>
+                        <td><span style="font-weight: 400;">Nevigation Tag</span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;p&sc;</td>
+                        <td><span style="font-weight: 400;">Paragraph Element</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;ul&sc;</td>
+                        <td><span style="font-weight: 400;">Unordered List</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;ol&sc;</td>
+                        <td><span style="font-weight: 400;">Ordered List</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;li&sc;</td>
+                        <td><span style="font-weight: 400;">List</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;a&sc;</td>
+                        <td><span style="font-weight: 400;">Anchor Tag</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;img&sc;</td>
+                        <td><span style="font-weight: 400;">Image Tag</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;th&sc;</td>
+                        <td><span style="font-weight: 400;">Table Head Tag</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;tr&sc;</td>
+                        <td><span style="font-weight: 400;">Table Row Tag</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;td&sc;</td>
+                        <td><span style="font-weight: 400;">Table Data Tag</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;div&sc;</td>
+                        <td><span style="font-weight: 400;">Content Division Element</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;header&sc;</td>
+                        <td><span style="font-weight: 400;">Header Tag</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>&pr;footer&sc;</td>
+                        <td><span style="font-weight: 400;">Footer Tag</span></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Assignment 2</title>
+    <style>
+        body {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: block;
+            margin: 30px;
+        }
+
+        .header1 {
+            height: 95vh;
+            background-image: linear-gradient(to bottom, rgba(251, 116, 62, 0.9), rgba(244, 179, 80, 0.9)), url(../img/hbgimg11.jpg);
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        }
+
+        .textbox {
+            font-family: 'Antonio', sans-serif;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .heading_primary {
+            color: #ffffff;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+            margin-bottom: 60px;
+        }
+
+        .heading_primary_main {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            font-size: 60px;
+            font-weight: 400;
+            letter-spacing: 35px;
+            text-shadow: 5px 5px 20px #ffffff;
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        .heading_primary_sub {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            display: block;
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 17.4px;
+            text-shadow: 5px 5px 20px #ffffff;
+            animation: moveInRight 1s ease-out;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin: 0px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            font-size: 20px;
+            margin: 13px 20px;
+            padding-top: 12px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Antonio', sans-serif;
+            /* font-family: 'Barlow', sans-serif;
+            font-family: 'Inconsolata', monospace; */
+            text-shadow: 5px 5px 35px #ffffff;
+        }
+
+        .navbar li a:hover {
+            /* color: #2f5d62; */
+            color: #364547;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        .btn {
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            background-color: #ffffff;
+            color: #777;
+            margin: 20px 20px;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        }
+
+        .footer {
+            height: 400px;
+            margin: 40px 30px 30px 30px;
+            background-color: black;
+            display: block;
+            position: relative;
+            clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .footerlogo{
+            position: absolute;
+            top: 25%;
+            left: 45%;
+            width: 6%;
+        }
+
+        .hrfooter{
+            position: absolute;
+            border : 1px solid gray;
+            top: 50%;
+            width: 70%;
+            left: 15%;
+            opacity: 0.4;
+        }
+
+        .footerdescr{
+            position: absolute;
+            top: 70%;
+            left: 16%;
+            color: #ffffff;
+            font-family: 'Inconsolata', monospace;
+            width: 70%;
+            text-shadow: 5px 5px 35px #ffffff;
+            opacity: 0.6;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header1">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="textbox">
+                <h1 class="heading_primary">
+                    <span class="heading_primary_main">Assignment 1</span>
+                    <span class="heading_primary_sub">Select A Option</span>
+                </h1>
+                <a href="Assignment1_Question1.html" class="btn btn_1">Q1</a>
+                <a href="Assignment1_Question2.html" class="btn btn_2">Q2</a>
+                <a href="Assignment1_Question3.html" class="btn btn_3">Q3</a>
+                <a href="Assignment1_Question4.html" class="btn btn_4">Q4</a>
+                <a href="Assignment1_Question5.html" class="btn btn_5">Q5</a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <footer class="footer">
+        <div>
+            <a href="index.html"><img src="circle-cropped.png" alt="" class="footerlogo"></a>
+            <hr class="hrfooter">
+        </div>
+
+        <span class="footerdescr">Built by Ved Dubey. This website is built just for practice purpose 😄. This website contains Assignemnt 2, Assignment 3, and Assignment 4 of Internet and Web Technology.</span>
+
+    </footer>
+</body>
+
+</html>

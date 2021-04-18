@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Assignment2_Question4</title>
+
+    <style>
+        body{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: block;
+            margin: 30px;
+        }
+
+        .header1 {
+            height: 100vh;
+            background-image: linear-gradient(to bottom, rgba(144, 62, 251, 0.9), rgba(188, 168, 235, 0.9));
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+            border-radius: 20px;
+        }
+
+        .textbox {
+            font-family: 'Antonio', sans-serif;
+            /* font-family: 'Barlow', sans-serif; */
+            /* font-family: 'Inconsolata', monospace; */
+            position: absolute;
+            top: 17%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .heading_primary {
+            color: #ffffff;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+            margin-bottom: 60px;
+        }
+
+        .heading_primary_main {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 35px;
+            text-shadow: 5px 5px 30px #ffffff;
+            animation-name: moveInLeft;
+            /* animation-duration: 1s;
+            animation-timing-function: ease-out; */
+        }
+
+        .heading_primary_sub {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 17.4px;
+            text-shadow: 5px 5px 30px #ffffff;
+            /* animation: moveInRight 1s ease-out; */
+        }
+
+        
+        .hr_1{
+            position: absolute;
+            border : 1px solid #ffffff;
+            top: 30%;
+            width: 70%;
+            left: 15%;
+            opacity: 0.4;
+        }
+        
+        /* .section_1{
+            display: block;
+            position: absolute;
+            top: 38%;
+            left : 40%;
+            text-shadow: 5px 5px 20px #dbd3d3;
+            color: rgb(0, 0, 0);
+            font-family: 'Antonio', sans-serif;
+            
+        } */
+
+        .topic_heading{
+            display: block;
+
+            font-family: 'Barlow', sans-serif;
+
+            font-weight: bold;
+
+            position: absolute;
+            top: 38%;
+            left : 39%;
+            
+            color: #000000;
+            text-align: center;
+            display: block;
+
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 10px;
+            text-shadow: 5px 5px 30px #ffffff
+        }
+
+        .list{
+            text-shadow: 5px 5px 30px #ffffff;
+            color: #000000;
+        }
+
+        .list_1{
+            position:absolute;
+            top: 50%;
+            left: 20%;
+            font-weight: bold;
+            /* font-family: 'Antonio', sans-serif; */
+            font-family: 'Barlow', sans-serif;
+            /* font-family: 'Inconsolata', monospace; */
+        }
+
+        .partition{
+            position: absolute;
+            border: 1px solid rgba(44, 43, 43, 0.74);
+            width: 25%;
+            top: 70%;
+            left: 35%;
+            transform: rotate(90deg);
+        }
+
+
+        .list_2{
+            position:absolute;
+            top: 50%;
+            left: 70%;
+            font-weight: bold;
+            /* font-family: 'Antonio', sans-serif; */
+            font-family: 'Barlow', sans-serif;
+            /* font-family: 'Inconsolata', monospace; */
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header1">
+            <div class="textbox">
+                <h1 class="heading_primary">
+                    <span class="heading_primary_main">Assignment 2</span>
+                    <span class="heading_primary_sub">Question 4</span>
+                </h1>
+            </div>
+            <hr class="hr_1">
+
+            <div class="section_1">
+                <h3 class="topic_heading">GROCERY LIST</h3>
+                <div class="list">
+                    <div class="list_1">
+                        <ul class="fruits">Fruits
+                            <li>Apple</li>
+                            <li>Banana</li>
+                            <li>pomegranate</li>
+                            <li><u>Tomato</u></li>
+                        </ul>
+                        <ul class="vegetables">Vegetables
+                            <li>Spinach</li>
+                            <li>Carrot</li>
+                            <li><u>Onion</u></li>
+                            <li><u>Potato</u></li>
+                            <li>Corn</li>
+                        </ul>
+                        <ul class="oil">Oil
+                            <li><u>Cooking Oil</u></li>
+                            <li>Vinegar</li>
+                            <li>Olive Oil</li>
+                        </ul>
+                    </div>
+
+                    <hr class="partition">
+
+                    <div class="list_2">
+                        <ul class="beverages">Beverages
+                            <li>Coffee</li>
+                            <li><u>Tea</u></li>
+                            <li>Juice</li>
+                        </ul>
+                        <ul class="snacks">Snacks
+                            <li>Cookies</li>
+                            <li><u>Chips</u></li>
+                            <li><u>Popcorn</u></li>
+                            <li>Chocolates</li>
+                        </ul>
+                        <ul class="condiments">Condiments
+                            <li><u>Salt</u></li>
+                            <li><u>Sugar</u></li>
+                            <li>Ketchup</li>
+                            <li>Honey</li>
+                            <li><u>Peanut butter</u></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+</body>
+</html>
